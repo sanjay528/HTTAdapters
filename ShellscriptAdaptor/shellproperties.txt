@@ -1,0 +1,11 @@
+threradSleep = 10000
+
+filename = /home/sanjeev/Workspace/sftp_upload.sh
+
+srcdir = /home/sanjeev/Music/central
+
+remotedir = nanda/Central_upload
+
+destdir = /home/sanjeev/Music/Central_completed
+
+LogFilePath = /home/Music/Central_completed/Log
