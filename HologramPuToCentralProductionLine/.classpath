@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/com.jcraft.jsch_0.1.31.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-beanutils-1.7.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-configuration-1.5.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-lang.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/commons-net-3.3.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/dcm4che-base64-2.0.21.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/ezmorph.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/httpclient-4.0.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/javabase64-1.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/java-json.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/javax.ws.rs.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/json-lib-2.2.2-jdk15.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/jsse(1).jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/mikrotik-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/opencsv-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/home/obs/anil/Adapter/Adaptor jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
