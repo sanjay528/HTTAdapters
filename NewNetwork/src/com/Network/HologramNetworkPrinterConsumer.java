@@ -123,6 +123,7 @@ public class HologramNetworkPrinterConsumer implements Runnable {
             try
             {
                 socket.close();
+                Thread.sleep(10000);
             }
             catch(Exception e)
             {

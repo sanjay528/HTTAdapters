@@ -8,30 +8,32 @@ import java.util.Queue;
 import org.apache.log4j.Logger;
 
 public class BarcodeGenerator {static Logger logger = Logger.getLogger("");
-SimpleDateFormat SIMPLEDATEFORMAT = new SimpleDateFormat("ddMMyyyyhh");
+SimpleDateFormat SIMPLEDATEFORMAT = new SimpleDateFormat("ddMMyyyy");
 private String barcode;
-String Companycode,Product, batch, size, brandName;
-Long Productionunit,cottonSize;
+String Companycode,Product, batch, size, brandName,cottonSize;
+Long Productionunit;
 BigDecimal mrp;
+private String lineid;
 
 public String Genarator(Queue<HologramProcessRequestData> queue, int uid)  {
 	String resultCommand = null;
 	for (HologramProcessRequestData lineData : queue) {
 		int countryCode = 890;
 		Companycode = lineData.getCompanyCode().substring(0, 3);
-		Product = lineData.getProductCode().substring(0, 3);
+		Product =  String.format("%0" + 4 + "d", Long.parseLong(lineData.getProductCode().substring(0, 3)));
 		Productionunit = lineData.getProductionUnitMasterId();
 		batch = lineData.getBatchNumber();
-		cottonSize = lineData.getCottonSize();
+		cottonSize = String.valueOf(lineData.getCottonSize()).substring(0, 2);
 		size = lineData.getSize().substring(0,3);
 		mrp = lineData.getMrp();
-		brandName = lineData.getApprovedBy();
+		brandName = lineData.getBrandName();
 		Date date = new Date();
 		String datestring = SIMPLEDATEFORMAT.format(date);
 		String unique = String.format("%0" + 5 + "d", uid);
+		lineid = String.format("%0" + 3 + "d", lineData.getLineNameId());
 
 //					3			3				3			4		5		3		2					8				3					5	
-		barcode = countryCode+Companycode + Productionunit+Product +batch+size+lineData.getCottonSize()+datestring +lineData.getLineNameId()+ unique;
+		barcode = countryCode+Companycode + Productionunit+Product +batch+size+cottonSize+datestring+lineid+ unique;
 		logger.info(barcode.length());
 		logger.info(barcode);
 		//barcode = countryCode+"-"+Companycode+"-" + Productionunit+"-" +Product +"-" +batch+"-" +datestring +"-" + unique;
